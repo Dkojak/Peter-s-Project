@@ -1,0 +1,111 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: rgb(219, 218, 215);
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+.nav-bar {
+    background-color: rgba(6, 96, 180, 0.808);
+    height: 3rem;
+    border-style: solid;
+    border-color: transparent;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 0 0 0 5px;
+    color: white;
+}
+
+.link-bar {
+    word-spacing: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(219, 218, 215);
+    text-transform: uppercase;
+}
+
+.hero {
+    display: grid;
+    grid-template-areas: 
+        'side-bar main-content' 
+        'side-bar left'; /* Corrected typo from 'lest' to 'left' */
+    grid-template-columns: 20% 1fr; /* Set column layout */
+    grid-template-rows: auto; /* Adjust the rows */
+}
+
+.grid-item1 {
+    grid-area: side-bar;
+    background-color: rgba(17, 22, 19, 0.925);
+    width: 100%; /* Ensures full width in grid */
+    height: 36.7rem;
+}
+
+.grid-item2 {
+    display: grid;
+    gap: 0; /* Remove space between items */
+    grid-area: main-content;
+    background-color: white;
+    width: 100%; /*Ensures full width in grid*/
+    height: 33.36rem; /* Fixed height for the grid container */
+    grid-template-areas: 
+        'card1 card2 card3' /* First row with 3 cards */
+        'card4 card5 card6'; /* Second row with 3 cards */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+}
+
+/* Adjust the height of the cards */
+.card {
+    color: white;
+    height: 50%;
+}
+
+.card1 {grid-area: card1;}
+.card2 {grid-area: card2;}
+.card3 {grid-area: card3;}
+/* .card4 {grid-area: card4;} */
+/* .card5 {grid-area: card5;} */
+/* .card6 {grid-area: card6;} */
+
+.grid-item3 {
+    grid-area: left; /* Fixed 'lest' to 'left' */
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px ;
+    color: black;
+    text-transform: capitalize;
+    height: 3.34rem; /* Should work now with a defined parent height */
+}
+
+.heed {
+    padding: 0.5px 0 0.5px 5px;
+    background-color: rgba(17, 22, 19, 0.925);
+    text-transform: capitalize;
+}
+
+.side-items {
+    padding: 10px 0 10px 5px;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.side-items:hover {
+    cursor: pointer;
+    background-color: rgba(17, 22, 19, 0.493);
+}
+
+footer {
+    background-color: black;
+    height: 10px; /* Increased footer height for better visibility */
+    border-style: solid;
+    border-color: black;
+}
