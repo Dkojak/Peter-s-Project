@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <p class="lib">Library Management</p>
+    </div>
+    <div class="logbox">
+        <div class="logo">
+            <img src="./media_contact@2x.png" alt="logo">
+            <h2 class="logtext">Register</h2>
+            <form id="registerForm">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <button type="submit">Create</button>
+                <p><a href="login.html">Already have an account?</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="./register.js"></script>
+</body>
+</html>

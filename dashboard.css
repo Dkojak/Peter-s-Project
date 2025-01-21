@@ -4,7 +4,9 @@ body {
     color: rgb(219, 218, 215);
     font-family: 'Roboto', 'Helvetica', sans-serif;
 }
-
+.profile-name{
+    display: flex;
+}
 .nav-bar {
     background-color: rgba(6, 96, 180, 0.808);
     height: 3rem;
@@ -112,7 +114,7 @@ a {
 
 footer {
     background-color: black;
-    height: 10px; /* Increased footer height for better visibility */
+    height: 12px; /* Increased footer height for better visibility */
     border-style: solid;
     border-color: black;
 }
