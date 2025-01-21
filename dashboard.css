@@ -47,6 +47,13 @@ a {
     width: 100%; /* Ensures full width in grid */
     height: 36.7rem;
 }
+.side-items{
+    border-left: solid 3px transparent;
+    transition: 0.2s;
+}
+.side-items:hover{
+    border-left: solid 3px green;
+}
 
 .grid-item2 {
     display: grid;
